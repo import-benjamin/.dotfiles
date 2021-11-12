@@ -1,9 +1,24 @@
-cd $HOME
+#!/bin/bash
 
-git clone https://github.com/benjaminBoboul/.dotfiles.git .dotfiles
+if [ ! -d $HOME/.dotfiles ]; then
+	git clone https://github.com/benjaminBoboul/.dotfiles.git $HOME/.dotfiles
+fi
 
-ln -s .dotfiles/.zshrc .zshrc
-ln -s .dotfiles/.vimrc .vimrc
-ln -s .dotfiles/.tmux.conf .tmux.conf
+configFiles=(.zshrc .vimrc .tmux.conf)
+configLocal=(${configFiles[*]/#/$HOME\/})
+configRemote=(${configFiles[*]/#/.dotfiles\/})
 
-cd -
+for indexConf in ${!configFiles[*]}
+do
+	cl=${configLocal[$indexConf]}
+	cr=${configRemote[$indexConf]}
+	
+	echo "Looking for $cr in $cl"
+
+	if [ -f $cl ]; then
+		echo "Found existing config file $cl, copying to $cl.pre-dotfile-script"
+		mv $cl "$cl.pre-dotfile-script"
+	fi
+
+	ln -s $cr $cl
+done
