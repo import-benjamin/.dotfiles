@@ -4,19 +4,31 @@
 
 - hosts: localhost
   tags: [ "git" ]
+  vars:
+    home_path: "{{ lookup('env', 'HOME') }}"
+    repo_path: "{{ home_path }}/.dotfiles"
   tasks:
-  - name: "Clone git repository in {{ lookup('env', 'HOME') }}/.dotfiles"
+  - name: "Install required packages"
+    package:
+      name:
+      - vim
+      - tmux
+      - zsh
+      state: latest
+
+  - name: "Clone git repository in {{ repo_path }}"
     git:
       repo: "https://github.com/benjaminBoboul/.dotfiles.git"
-      dest: "{{ lookup('env', 'HOME') }}/.dotfiles"
+      dest: "{{ repo_path }}"
       clone: yes
       update: yes
 
   - name: "Backup configuration files"
     copy:
-      src: "{{ lookup('env', 'HOME') }}/.dotfiles/{{ item }}"
-      dest: "{{ lookup('env', 'HOME') }}/{{ item }}"
+      src: "{{ repo_path }}/{{ item }}"
+      dest: "{{ home_path }}/{{ item }}"
       backup: yes
+      backup_file: "{{ home_path }}/{{ item }}.pre-dotfiles"
     with_items:
     - .zshrc
     - .vimrc
