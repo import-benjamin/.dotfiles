@@ -4,7 +4,7 @@
 export ZSH="/home/benjamin/.oh-my-zsh"
 
 # See https://github.com/ohmyzsh/ohmyzsh/wiki/Themes
-ZSH_THEME="daveverwer"
+ZSH_THEME="agnoster"
 
 ZSH_TMUX_AUTOSTART=true
 
