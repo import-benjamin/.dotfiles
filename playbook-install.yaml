@@ -1,0 +1,24 @@
+#!/bin/ansible-playbook
+
+---
+
+- hosts: localhost
+  tags: [ "git" ]
+  tasks:
+  - name: "Clone git repository in {{ lookup('env', 'HOME') }}/.dotfiles"
+    git:
+      repo: "https://github.com/benjaminBoboul/.dotfiles.git"
+      dest: "{{ lookup('env', 'HOME') }}/.dotfiles"
+      clone: yes
+      update: yes
+
+  - name: "Backup configuration files"
+    copy:
+      src: "{{ lookup('env', 'HOME') }}/.dotfiles/{{ item }}"
+      dest: "{{ lookup('env', 'HOME') }}/{{ item }}"
+      backup: yes
+    with_items:
+    - .zshrc
+    - .vimrc
+    - .tmux.conf
+      
