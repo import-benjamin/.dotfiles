@@ -7,6 +7,7 @@
   vars:
     home_path: "{{ lookup('env', 'HOME') }}"
     repo_path: "{{ home_path }}/.dotfiles"
+    user_id: "{{ ansible_user_id }}"
   tasks:
   
   - name: "Install required packages"
@@ -17,6 +18,12 @@
       - tmux
       - zsh
       state: latest
+
+  - name: Change user shell to zsh 
+    become: yes
+    user:
+      name: "{{ user_id }}"
+      shell: /bin/zsh
 
   - name: "Clone git repository in {{ repo_path }}"
     git:
