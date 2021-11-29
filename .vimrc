@@ -2,8 +2,8 @@ call plug#begin("~/.vim/plugged")
 
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'vim-airline/vim-airline'
-Plug 'arcticicestudio/nord-vim'
 Plug 'lervag/vimtex'
+Plug 'morhetz/gruvbox'
 
 call plug#end()
 
@@ -13,7 +13,6 @@ call plug#end()
 "PlugClean
 "PlugUpgrade
 
-let g:nord_cursor_line_number_background = 1
 let g:airline_powerline_fonts = 1
 let g:vimtex_compiler_enabled = 0
 
@@ -32,5 +31,6 @@ set autoindent
 set ruler
 set wildmenu
 set hlsearch
+set background=dark
 
-colorscheme nord
+colorscheme gruvbox
