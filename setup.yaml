@@ -1,0 +1,31 @@
+#!/bin/ansible-playbook
+
+---
+
+- hosts: all
+  vars:
+    user_id: "{{ ansible_user_id }}"
+  tasks:
+  - name: "Install required packages"
+    become: yes
+    ansible.builtin.package:
+      name:
+      - vim
+      - tmux
+      - starship
+      - duf
+      - golang
+      - rust
+      - cargo
+      state: latest
+
+  - name: Change user shell to zsh 
+    become: yes
+    ansible.builtin.user:
+      name: "{{ user_id }}"
+      shell: /bin/zsh
+
+  - name: Install starship in bashrc 
+    ansible.builtin.lineinfile:
+      path: ~/.bashrc
+      line: eval "$(starship init bash)"
