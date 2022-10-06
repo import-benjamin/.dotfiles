@@ -8,5 +8,5 @@ The playbook will install required packages, clone the repository and copy confi
 You can copy the `playbook-install.yaml` file and run it with the following command, where `ansible_become_pass` is your root password which is required to install packages.
 
 ```bash
-ansible-playbook -c local -K playbook-install.yaml
+ansible-pull -U https://github.com/benjaminBoboul/.dotfiles setup.yaml
 ```

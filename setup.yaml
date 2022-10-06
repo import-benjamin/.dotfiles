@@ -2,7 +2,7 @@
 
 ---
 
-- hosts: all
+- hosts: localhost
   tasks:
   - name: Add Apt signing keys
     tags: [ubuntu, apt_repository, proprietary]
