@@ -77,3 +77,18 @@
       line: eval "$(starship init bash)"
       state: present
       insertafter: EOF
+  
+  - name: Install vscode extensions
+    tags: [editor, proprietary]
+    ansible.builtin.command:
+      cmd: "code --install-extension {{ item }}"
+    loop:
+    - jdinhlife.gruvbox
+    - redhat.ansible
+    - HashiCorp.terraform
+    - HashiCorp.HCL
+    - ms-azuretools.vscode-docker
+    - ms-vscode-remote.remote-containers
+    - vscodevim.vim
+    register: extension_install
+    changed_when: '"already installed." not in extension_install.stdout'
