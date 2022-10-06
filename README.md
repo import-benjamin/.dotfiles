@@ -8,10 +8,5 @@ The playbook will install required packages, clone the repository and copy confi
 You can copy the `playbook-install.yaml` file and run it with the following command, where `ansible_become_pass` is your root password which is required to install packages.
 
 ```bash
-ansible-playbook  --extra-vars='ansible_become_pass=XXXXX' playbook-install.yaml
+ansible-playbook -c local -K playbook-install.yaml
 ```
-
-### Install plugins in tools
-
-- __VIM__:  Once vim is started, run `:PlugInstall` command to download plugins. You might require to reload your vim after this.
-- __TMUX__: In Tmux, the keys `C-b I` will download plugins and reload your configuration.
