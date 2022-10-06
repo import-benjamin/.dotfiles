@@ -37,19 +37,22 @@
     tags: [ubuntu, apt_repository, proprietary]
     become: true
     block:
-    - loop: "{{ apt_repos }}"
+    - loop:
+      - "{{ apt_repos }}"
       name: Add Example GPG key
       when: item.url is defined
       ansible.builtin.get_url:
         url: "{{ item.url }}"
         dest: "/etc/apt/keyrings/{{ item.filename }}.asc"
         mode: '0644'
-    - loop: "{{ apt_repos }}"
+    - loop:
+      - "{{ apt_repos }}"
       when: item.url is defined
       ansible.builtin.apt_repository:
       filename: "{{ item.filename }}"
       repo: "deb [arch=amd64,signed-by=/etc/apt/keyrings/{{ item.filename }}.asc] {{ item.repo }}"
-    - loop: "{{ apt_repos }}"
+    - loop:
+      - "{{ apt_repos }}"
       when: item.url is not defined
       ansible.builtin.apt_repository:
       filename: "{{ item.filename }}"
