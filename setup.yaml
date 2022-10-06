@@ -14,7 +14,7 @@
     loop:
     - {id: E8A032E094D8EB4EA189D270DA418C88A3219F7B, url: https://apt.releases.hashicorp.com/gpg}
     - {id: 1EDDE2CDFC025D17F6DA9EC0ADAE6AD28A8F901A, url: https://download.sublimetext.com/sublimehq-pub.gpg}
-    - {id: 9DC858229FC7DD38854AE2D88D81803C0EBFCD88, url: https://download.docker.com/linux/ubuntu}
+    - {id: 9DC858229FC7DD38854AE2D88D81803C0EBFCD88, url: https://download.docker.com/linux/ubuntu/gpg}
     - {id: BC528686B50D79E339D3721CEB3E94ADBE1229CF, url: https://packages.microsoft.com/keys/microsoft.asc}
 
   - name: Install apt repositories
