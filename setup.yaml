@@ -23,11 +23,11 @@
         }
       - {
           url: https://packages.microsoft.com/keys/microsoft.asc,
-          repo: "deb https://packages.microsoft.com/repos/code stable main",
+          repo: "https://packages.microsoft.com/repos/code stable main",
           filename: microsoft
         }
       - {
-          repo: "deb http://dl.google.com/linux/chrome/deb/ stable main",
+          repo: "http://dl.google.com/linux/chrome/deb/ stable main",
           filename: google-chrome
         }
 
@@ -37,33 +37,23 @@
     tags: [ubuntu, apt_repository, proprietary]
     become: true
     block:
-    - loop:
-      - "{{ apt_repos }}"
-      name: Add Example GPG key
+    - name: Add Example GPG key
       when: item.url is defined
       ansible.builtin.get_url:
         url: "{{ item.url }}"
         dest: "/etc/apt/keyrings/{{ item.filename }}.asc"
         mode: '0644'
-    - loop:
-      - "{{ apt_repos }}"
-      when: item.url is defined
-      ansible.builtin.apt_repository:
-      filename: "{{ item.filename }}"
-      repo: "deb [arch=amd64,signed-by=/etc/apt/keyrings/{{ item.filename }}.asc] {{ item.repo }}"
-    - loop:
-      - "{{ apt_repos }}"
-      when: item.url is not defined
-      ansible.builtin.apt_repository:
-      filename: "{{ item.filename }}"
-      repo: "deb [arch=amd64] {{ item.repo }}"
-    
+      loop: "{{ apt_repos }}"
+    - ansible.builtin.apt_repository:
+        filename: "{{ item.filename }}"
+        repo: "deb [arch=amd64{{ ', signed-by=/etc/apt/keyrings/' ~ item.filename ~ '.asc' if item.url is defined }}] {{ item.repo }}"
+      loop: "{{ apt_repos }}"
+
   - name: "Install shell packages"
     become: true
     tags: [shell]
     ansible.builtin.package:
       name:
-      - starship
       - tilix
       - duf
       - exa
@@ -78,6 +68,13 @@
       - docker-compose-plugin
       - google-chrome-stable
       state: latest
+
+  - name: Install starship
+    tags: [ubuntu,shell]
+    community.general.snap:
+      name:
+        - starship
+        - slack
 
   - name: Install starship in bashrc 
     tags: [shell]
