@@ -1,0 +1,15 @@
+theme = "github_dark"
+
+[editor]
+cursorline = true
+auto-format = false
+color-modes = true
+
+[editor.lsp]
+display-messages = true
+
+[editor.indent-guides]
+render = true
+
+[editor.soft-wrap]
+enable = true
