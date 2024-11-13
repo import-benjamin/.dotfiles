@@ -1,0 +1,17 @@
+[window]
+opacity = 1
+decorations = "None"
+
+[font]
+normal.family = "FantasqueSansM Nerd Font Mono"
+bold.family = "FantasqueSansM Nerd Font Mono"
+italic.family = "FantasqueSansM Nerd Font Mono"
+bold_italic.family = "FantasqueSansM Nerd Font Mono"
+
+size = 16.0
+
+[[keyboard.bindings]]
+action = "ToggleFullscreen"
+key = "F"
+mods = "Alt"
+
