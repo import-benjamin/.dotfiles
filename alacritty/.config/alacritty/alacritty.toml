@@ -1,6 +1,6 @@
 [window]
 opacity = 1
-decorations = "None"
+decorations = "Full"
 
 [font]
 normal.family = "FantasqueSansM Nerd Font Mono"
