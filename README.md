@@ -4,7 +4,13 @@ To install GNU Stow on Linux, follow these steps (Debian/Ubuntu):
 
 ```bash
 sudo apt update
-sudo apt install stow
+sudo apt install stow ansible
+```
+
+## Install tools using ansible
+
+```bash
+ANSIBLE_FORCE_COLOR=True ansible-pull --url https://github.com/import-benjamin/.dotfiles.git --inventory localhost, --limit localhost --connection local  --verbose playbook.yml
 ```
 
 

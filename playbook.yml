@@ -2,12 +2,10 @@
 
 - name: Install zellij
   hosts: all
-  connection: local
   tags:
     - cli
   tasks:
     - name: Check if zellij is installed
-      when: force_install is undefined
       ansible.builtin.shell: command -v zellij
       when: force_install is undefined
       changed_when: false
@@ -32,7 +30,6 @@
 
 - name: Install nvim
   hosts: all
-  connection: local
   tags:
     - cli
   tasks:
@@ -64,7 +61,6 @@
 
 - name: Install lazygit
   hosts: all
-  connection: local
   tags:
     - cli
   tasks:
