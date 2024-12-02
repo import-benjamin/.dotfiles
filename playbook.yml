@@ -1,7 +1,7 @@
 ---
 
 - name: Install zellij
-  hosts: localhost
+  hosts: all
   connection: local
   tags:
     - cli
@@ -31,7 +31,7 @@
         remote_src: yes
 
 - name: Install nvim
-  hosts: localhost
+  hosts: all
   connection: local
   tags:
     - cli
@@ -63,7 +63,7 @@
         remote_src: yes
 
 - name: Install lazygit
-  hosts: localhost
+  hosts: all
   connection: local
   tags:
     - cli
