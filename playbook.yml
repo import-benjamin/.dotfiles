@@ -21,13 +21,22 @@
         version: v0.44.1
         github_repo: https://github.com/jesseduffield/lazygit
         artifact_name: lazygit_0.44.1_Linux_x86_64.tar.gz
+      - name: starship
+        version: v1.21.1
+        github_repo: https://github.com/starship/starship
+        artifact_name: starship-x86_64-unknown-linux-gnu.tar.gz
+      - name: neovide
+        version: 0.13.3
+        github_repo: https://github.com/neovide/neovide
+        artifact_name: neovide-linux-x86_64.tar.gz 
+
   tasks:
     - name: Create bin folder
       ansible.builtin.file:
         path: "{{ item }}"
         state: directory
       become: true
-      loop: "{{ [tools_folder] | product(tools | map(attribute='name')) | map('join', '.') }}"
+      loop: "{{ [tools_folder] | product(tools | map(attribute='name')) | map('join', '') }}"
 
     - name: Extract tool
       ansible.builtin.unarchive:
@@ -49,3 +58,14 @@
       loop_control:
         label: "{{ tools_folder ~ ( item.bin_path | default(item.name ~ '/' ~ item.name)) }} to /usr/local/bin/{{ item.name }}"
 
+
+- name: Install dotfiles
+  hosts: all
+  tags:
+    - config
+  tasks:
+  - name: "Clone repository to {{ ansible_env.HOME }}"
+    ansible.builtin.git:
+      repo: "https://github.com/import-benjamin/.dotfiles.git"
+      dest: "{{ ansible_env.HOME }}/.dotfiles"
+  # TODO: implement automatic stow installation/update
