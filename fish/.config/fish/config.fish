@@ -1,8 +1,5 @@
 fish_add_path ~/.cargo/bin
 fish_add_path ~/.npm-global/bin
-fish_add_path /opt/nvim-linux64/bin/
-fish_add_path /opt/lazygit-linux64/
-fish_add_path /opt/zellij-linux64/
 if status is-interactive
     # Commands to run in interactive sessions can go here
     set -g fish_key_bindings fish_vi_key_bindings
