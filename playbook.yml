@@ -29,7 +29,10 @@
         version: 0.13.3
         github_repo: https://github.com/neovide/neovide
         artifact_name: neovide-linux-x86_64.tar.gz 
-
+      - name: eza
+        version: v0.20.10
+        github_repo: https://github.com/eza-community/eza
+        artifact_name: eza_x86_64-unknown-linux-gnu.tar.gz
   tasks:
     - name: Create bin folder
       ansible.builtin.file:
