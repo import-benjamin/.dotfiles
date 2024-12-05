@@ -8,14 +8,16 @@ sudo apt install stow ansible git
 ```
 
 ## Install tools using ansible-pull
-
+<!-- x-release-please-start-version -->
 ```bash
-ANSIBLE_FORCE_COLOR=True ansible-pull \
+ansible-pull \
   --url https://github.com/import-benjamin/.dotfiles.git \
+  --checkout v1.0.0\
   --inventory localhost, \
   --connection local \
   playbook.yml
 ```
+<!-- x-release-please-end -->
 
 
 ## Install configuration files
