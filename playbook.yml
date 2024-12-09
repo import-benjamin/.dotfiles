@@ -71,4 +71,5 @@
     ansible.builtin.git:
       repo: "https://github.com/import-benjamin/.dotfiles.git"
       dest: "{{ ansible_env.HOME }}/.dotfiles"
+      version: v1.0.0  # x-release-please-version
   # TODO: implement automatic stow installation/update

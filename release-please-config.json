@@ -5,7 +5,8 @@
         ".": {
             "release-type": "simple",
             "extra-files": [
-                "README.md"
+                "README.md",
+                "playbook.yml"
             ],
             "changelog-sections": [
                 {
