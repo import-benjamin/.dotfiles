@@ -1,18 +1,18 @@
 ## Prerequisites
 
-To install GNU Stow on Linux, follow these steps (Debian/Ubuntu):
+To install `GNU Stow` and `ansible` on Debian/Ubuntu like systems, follow these steps:
 
 ```bash
-sudo apt update
 sudo apt install stow ansible git
 ```
 
 ## Install tools using ansible-pull
+
 <!-- x-release-please-start-version -->
 ```bash
 ansible-pull \
   --url https://github.com/import-benjamin/.dotfiles.git \
-  --checkout v1.0.0\
+  --checkout v1.0.0 \
   --inventory localhost, \
   --connection local \
   playbook.yml
