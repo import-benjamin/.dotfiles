@@ -66,10 +66,33 @@
   hosts: all
   tags:
     - config
+  vars:
+    stow_configs:
+      - alacritty
+      - fish
+      - nvim
+      - zellij
   tasks:
   - name: "Clone repository to {{ ansible_env.HOME }}"
     ansible.builtin.git:
       repo: "https://github.com/import-benjamin/.dotfiles.git"
       dest: "{{ ansible_env.HOME }}/.dotfiles"
       version: v1.0.0  # x-release-please-version
-  # TODO: implement automatic stow installation/update
+
+  - name: "Fetch {{ ansible_env.HOME }}/.config directories"
+    ansible.builtin.stat:
+      path: "{{ ansible_env.HOME }}/.config/{{ item }}"
+    register: sym
+    loop: "{{ stow_configs }}"
+    loop_control:
+      label: "{{ ansible_env.HOME }}/.config/{{ item }}"
+
+  - name: "Update stow configuration"
+    ansible.builtin.command: "stow {{ '-R ' if config_dir.stat.islnk is defined and config_dir.stat.islnk }}{{ item }}"
+    args:
+      chdir: "{{ ansible_env.HOME }}/.dotfiles"
+    loop: "{{ stow_configs }}"
+    loop_control:
+      label: "stow {{ '-R ' if config_dir.stat.islnk is defined and config_dir.stat.islnk }}{{ item }}"
+    vars:
+      config_dir: "{{ sym.results | selectattr('item', 'equalto', item) | first }}"
