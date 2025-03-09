@@ -4,8 +4,3 @@
 
 vim.opt.mouse = ""
 vim.opt.wrap = true
-
-vim.o.termguicolors = true
-vim.o.background = "dark"
-vim.g.zenbones = { darkness = "stark" }
-vim.g.gitsigns_status_dict = { added = "+", modified = "~", removed = "-" }

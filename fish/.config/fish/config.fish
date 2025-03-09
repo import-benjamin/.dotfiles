@@ -6,6 +6,6 @@ if status is-interactive
     abbr --add glola git log --oneline --graph --all
     abbr --add ll eza -l
     abbr --add lt eza -lT
-    eval (zellij setup --generate-auto-start fish | string collect)
+    # eval (zellij setup --generate-auto-start fish | string collect)
     starship init fish | source
 end
