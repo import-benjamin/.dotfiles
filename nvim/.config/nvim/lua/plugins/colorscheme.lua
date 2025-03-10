@@ -1,9 +1,9 @@
 return {
-  { "gmr458/cold.nvim" },
+  { "EdenEast/nightfox.nvim" },
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "cold",
+      colorscheme = "dayfox",
     },
   },
 }
