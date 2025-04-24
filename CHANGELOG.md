@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.2.0](https://github.com/import-benjamin/.dotfiles/compare/v1.1.0...v1.2.0) (2025-04-24)
+
+
+* upgrade packages and migrate to zenbones ([#6](https://github.com/import-benjamin/.dotfiles/issues/6)) ([2271811](https://github.com/import-benjamin/.dotfiles/commit/227181184f6f196ee6951c8f56ba63cb5e1a364f))
+
 ## [1.1.0](https://github.com/import-benjamin/.dotfiles/compare/v1.0.0...v1.1.0) (2024-12-09)
 
 
