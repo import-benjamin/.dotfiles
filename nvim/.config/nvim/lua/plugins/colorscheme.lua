@@ -1,13 +1,10 @@
 return {
-  "projekt0n/github-nvim-theme",
-  name = "github-theme",
-  lazy = false, -- make sure we load this during startup if it is your main colorscheme
-  priority = 1000, -- make sure to load this before all the other start plugins
+  "zenbones-theme/zenbones.nvim",
+  dependencies = "rktjmp/lush.nvim",
+  lazy = false,
+  priority = 1000,
+  -- you can set set configuration options here
   config = function()
-    require("github-theme").setup({
-      -- ...
-    })
-
-    vim.cmd("colorscheme github_dark_high_contrast")
+    vim.cmd.colorscheme("zenbones")
   end,
 }

@@ -1,6 +1,6 @@
 
 general.import = [
-    "~/.config/alacritty/themes/themes/github_dark_high_contrast.toml"
+    "~/.config/alacritty/zenbones_light.toml"
 ]
 
 [window]
@@ -15,8 +15,8 @@ bold_italic.family = "FantasqueSansM Nerd Font Mono"
 
 size = 16.0
 
-[[keyboard.bindings]]
-action = "ToggleFullscreen"
-key = "F"
-mods = "Alt"
+# [[keyboard.bindings]]
+# action = "ToggleFullscreen"
+# key = "F"
+# mods = "Alt"
 
