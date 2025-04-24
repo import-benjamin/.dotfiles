@@ -1,6 +1,6 @@
 
 general.import = [
-    "~/.config/alacritty/themes/themes/dayfox.toml"
+    "~/.config/alacritty/zenbones_light.toml"
 ]
 
 [window]
