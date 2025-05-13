@@ -1,11 +1,12 @@
 
 general.import = [
-    "~/.config/alacritty/zenbones_light.toml"
+    "~/.config/alacritty/zenbones_dark.toml"
 ]
 
 [window]
 opacity = 1
 decorations = "Full"
+startup_mode = "Maximized"
 
 [font]
 normal.family = "FantasqueSansM Nerd Font Mono"
@@ -14,6 +15,9 @@ italic.family = "FantasqueSansM Nerd Font Mono"
 bold_italic.family = "FantasqueSansM Nerd Font Mono"
 
 size = 16.0
+
+[mouse]
+hide_when_typing = false
 
 # [[keyboard.bindings]]
 # action = "ToggleFullscreen"
