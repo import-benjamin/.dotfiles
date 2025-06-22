@@ -1,0 +1,23 @@
+theme = "gruvbox"
+
+[editor]
+line-number = "relative"
+mouse = false
+
+[editor.file-picker]
+hidden = false
+git-ignore = false
+
+
+[editor.lsp]
+display-progress-messages = true
+display-inlay-hints	= true
+
+[editor.whitespace]
+render = "all"
+
+[editor.indent-guides]
+render = true
+
+[editor.soft-wrap]
+enable = true
