@@ -18,7 +18,7 @@
         artifact_name: nvim-linux64.tar.gz
         bin_path: nvim/nvim-linux64/bin/nvim
       - name: helix
-        version: v0.10.2
+        version: v25.01.1
         github_repo: https://github.com/helix-editor/helix
         artifact_name:  helix-25.01.1-x86_64-linux.tar.xz
         bin_path: helix/hx
