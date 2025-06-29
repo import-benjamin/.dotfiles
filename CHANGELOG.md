@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.3.4](https://github.com/import-benjamin/.dotfiles/compare/v1.3.3...v1.3.4) (2025-06-29)
+
+
+* **helix:** update binary path for symbolic link during installation ([edc6bc2](https://github.com/import-benjamin/.dotfiles/commit/edc6bc2945c1dc1b3d0aa1e96e8e2ef214e36639))
+
 ## [1.3.3](https://github.com/import-benjamin/.dotfiles/compare/v1.3.2...v1.3.3) (2025-06-29)
 
 
