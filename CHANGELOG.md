@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.3.0](https://github.com/import-benjamin/.dotfiles/compare/v1.2.0...v1.3.0) (2025-06-29)
+
+
+* **ansible:** add helix installation and upgrade tools ([#13](https://github.com/import-benjamin/.dotfiles/issues/13)) ([6543385](https://github.com/import-benjamin/.dotfiles/commit/6543385894a9bf107ef32277b67abb9ce46bf2c6))
+* **helix:** add config files for new editor ([#11](https://github.com/import-benjamin/.dotfiles/issues/11)) ([3517850](https://github.com/import-benjamin/.dotfiles/commit/35178505ac3a59c2dfbf26b0c616e17e7efbe8eb))
+
 ## [1.2.0](https://github.com/import-benjamin/.dotfiles/compare/v1.1.0...v1.2.0) (2025-05-13)
 
 
