@@ -12,8 +12,8 @@ sudo apt install stow ansible git
 ```bash
 ansible-pull \
   --url https://github.com/import-benjamin/.dotfiles.git \
-  --checkout v1.4.0 \
-  --extra-vars "config_version=v1.4.0" \
+  --checkout v1.5.0 \
+  --extra-vars "config_version=v1.5.0" \
   --inventory localhost, \
   --connection local \
   --ask-become-pass \

@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.5.0](https://github.com/import-benjamin/.dotfiles/compare/v1.4.0...v1.5.0) (2025-06-29)
+
+
+* **fish:** add zellij completions and functions ([3520544](https://github.com/import-benjamin/.dotfiles/commit/35205441f4c608b4557a543bd1495ddbc524965b))
+* spacing in github variable interpolation ([#20](https://github.com/import-benjamin/.dotfiles/issues/20)) ([09cbc4f](https://github.com/import-benjamin/.dotfiles/commit/09cbc4fb5c7fbda59068977321d46179fda84df0))
+
 ## [1.4.0](https://github.com/import-benjamin/.dotfiles/compare/v1.3.4...v1.4.0) (2025-06-29)
 
 
