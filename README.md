@@ -12,7 +12,7 @@ sudo apt install stow ansible git
 ```bash
 ansible-pull \
   --url https://github.com/import-benjamin/.dotfiles.git \
-  --checkout v1.2.0 \
+  --checkout v1.3.0 \
   --inventory localhost, \
   --connection local \
   playbook.yml
