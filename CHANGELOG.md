@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.3.1](https://github.com/import-benjamin/.dotfiles/compare/v1.3.0...v1.3.1) (2025-06-29)
+
+
+* **helix:** update version from github release download url ([f653067](https://github.com/import-benjamin/.dotfiles/commit/f65306766d13c28f6a2ba2f263043284a6bdf360))
+
 ## [1.3.0](https://github.com/import-benjamin/.dotfiles/compare/v1.2.0...v1.3.0) (2025-06-29)
 
 
