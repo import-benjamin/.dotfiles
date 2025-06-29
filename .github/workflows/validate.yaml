@@ -13,7 +13,7 @@ jobs:
       - run: >2-
           ansible-pull
           --url https://github.com/import-benjamin/.dotfiles.git
-          --checkout {{ github.head_ref}}
+          --checkout {{ github.head_ref }}
           --extra-vars "config_version={{ github.head_ref }}"
           --inventory localhost,
           --connection local
