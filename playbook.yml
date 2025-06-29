@@ -20,7 +20,7 @@
         version: "25.01.1"
         github_repo: "https://github.com/helix-editor/helix"
         artifact_name: "helix-25.01.1-x86_64-linux.tar.xz"
-        bin_path: "helix/hx"
+        bin_path: "helix/helix-25.01.1-x86_64-linux/hx"
       - name: "lazygit"
         version: "v0.52.0"
         github_repo: "https://github.com/jesseduffield/lazygit"
