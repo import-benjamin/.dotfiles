@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.3.2](https://github.com/import-benjamin/.dotfiles/compare/v1.3.1...v1.3.2) (2025-06-29)
+
+
+* **helix:** remove 'v' char from tag in download url ([0748f0c](https://github.com/import-benjamin/.dotfiles/commit/0748f0ce0219250cd9d262afea22eee308b17ce5))
+
 ## [1.3.1](https://github.com/import-benjamin/.dotfiles/compare/v1.3.0...v1.3.1) (2025-06-29)
 
 
