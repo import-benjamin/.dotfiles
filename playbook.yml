@@ -83,7 +83,7 @@
     ansible.builtin.git:
       repo: "https://github.com/import-benjamin/.dotfiles.git"
       dest: "{{ ansible_env.HOME }}/.dotfiles"
-      version: v1.3.0  # x-release-please-version
+      version: v1.3.1  # x-release-please-version
 
   - name: "Fetch {{ ansible_env.HOME }}/.config directories"
     ansible.builtin.stat:
