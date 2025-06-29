@@ -1,6 +1,6 @@
 
 general.import = [
-    "~/.config/alacritty/zenbones_dark.toml"
+    "~/.config/alacritty/gruvbox_dark.toml"
 ]
 
 [window]
@@ -18,6 +18,11 @@ size = 16.0
 
 [mouse]
 hide_when_typing = false
+
+[terminal]
+
+[terminal.shell]
+program = "zellij"
 
 # [[keyboard.bindings]]
 # action = "ToggleFullscreen"
