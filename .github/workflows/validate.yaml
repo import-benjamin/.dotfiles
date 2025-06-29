@@ -10,7 +10,7 @@ jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
-      - run: apt install stow
+      - run: sudo apt install stow
       - run: >2-
           ansible-pull
           --url https://github.com/import-benjamin/.dotfiles.git
