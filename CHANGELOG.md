@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.4.0](https://github.com/import-benjamin/.dotfiles/compare/v1.3.4...v1.4.0) (2025-06-29)
+
+
+* add support for easier testing and split fish config ([724d732](https://github.com/import-benjamin/.dotfiles/commit/724d73286050ddfc2ec1a9bcfc44024db9246451))
+* improve README manual section ([35fbeb5](https://github.com/import-benjamin/.dotfiles/commit/35fbeb5c0d81b08456101ad1cc3781975a064d25))
+
 ## [1.3.4](https://github.com/import-benjamin/.dotfiles/compare/v1.3.3...v1.3.4) (2025-06-29)
 
 
