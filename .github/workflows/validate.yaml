@@ -10,6 +10,7 @@ jobs:
   validate:
     runs-on: ubuntu-latest
     steps:
+      - run: apt install stow
       - run: >2-
           ansible-pull
           --url https://github.com/import-benjamin/.dotfiles.git
@@ -17,6 +18,5 @@ jobs:
           --extra-vars "config_version=${{ github.head_ref }}"
           --inventory localhost,
           --connection local
-          --ask-become-pass
           playbook.yml
 
