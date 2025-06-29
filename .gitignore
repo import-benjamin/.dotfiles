@@ -1,2 +1,3 @@
 fish/.config/fish/functions/,*.fish
+fish/.config/fish/conf.d/,*.fish
 fish/.config/fish/fish_variables

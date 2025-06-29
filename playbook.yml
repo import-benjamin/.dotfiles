@@ -5,6 +5,7 @@
   tags:
     - "cli"
   vars:
+    config_version: "v1.3.4"  # x-release-please-version
     tools_folder: "/usr/local/opt/"
     tools:
       - name: "zellij"
@@ -65,7 +66,6 @@
       loop_control:
         label: "{{ tools_folder ~ ( item.bin_path | default(item.name ~ '/' ~ item.name)) }} to /usr/local/bin/{{ item.name }}"
 
-
 - name: "Install dotfiles"
   hosts: "all"
   tags:
@@ -82,7 +82,7 @@
     ansible.builtin.git:
       repo: "https://github.com/import-benjamin/.dotfiles.git"
       dest: "{{ ansible_env.HOME }}/.dotfiles"
-      version: "v1.3.4"  # x-release-please-version
+      version: "{{ config_version }}"
 
   - name: "Fetch {{ ansible_env.HOME }}/.config directories"
     ansible.builtin.stat:

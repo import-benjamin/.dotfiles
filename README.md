@@ -13,8 +13,10 @@ sudo apt install stow ansible git
 ansible-pull \
   --url https://github.com/import-benjamin/.dotfiles.git \
   --checkout v1.3.4 \
+  --extra-vars "config_version=v1.3.4" \
   --inventory localhost, \
   --connection local \
+  --ask-become-pass \
   playbook.yml
 ```
 <!-- x-release-please-end -->
