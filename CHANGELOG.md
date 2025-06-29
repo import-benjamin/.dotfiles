@@ -1,5 +1,10 @@
 # Changelog
 
+## [1.3.3](https://github.com/import-benjamin/.dotfiles/compare/v1.3.2...v1.3.3) (2025-06-29)
+
+
+* invalid versions upgrade in packages installation ([d7416d8](https://github.com/import-benjamin/.dotfiles/commit/d7416d8e4a00da905949c1c17ca696ebcce55087))
+
 ## [1.3.2](https://github.com/import-benjamin/.dotfiles/compare/v1.3.1...v1.3.2) (2025-06-29)
 
 
