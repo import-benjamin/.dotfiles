@@ -3,6 +3,7 @@ theme = "gruvbox"
 [editor]
 line-number = "relative"
 mouse = false
+completion-timeout = 5
 
 [editor.file-picker]
 hidden = false
