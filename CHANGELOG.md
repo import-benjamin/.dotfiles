@@ -1,5 +1,18 @@
 # Changelog
 
+## [2.0.0](https://github.com/import-benjamin/.dotfiles/compare/v1.5.0...v2.0.0) (2025-07-02)
+
+
+### ⚠ BREAKING CHANGES
+
+* remove unused nvim config ([#23](https://github.com/import-benjamin/.dotfiles/issues/23))
+
+* add git config with custom diff delta ([#21](https://github.com/import-benjamin/.dotfiles/issues/21)) ([af2b350](https://github.com/import-benjamin/.dotfiles/commit/af2b35037622e5babbb73a5ae4690b80faea1812))
+* disable zellij tips on startup ([#26](https://github.com/import-benjamin/.dotfiles/issues/26)) ([2c875d6](https://github.com/import-benjamin/.dotfiles/commit/2c875d65b157c85571682d9e688dc845689564c4))
+* **git:** add support for user configuration ([#24](https://github.com/import-benjamin/.dotfiles/issues/24)) ([d9b39d8](https://github.com/import-benjamin/.dotfiles/commit/d9b39d8d7b2cc49b5b816a4a2310d093914e781a))
+* remove unused nvim config ([#23](https://github.com/import-benjamin/.dotfiles/issues/23)) ([b3aa807](https://github.com/import-benjamin/.dotfiles/commit/b3aa8078d446ac798bc23764d3206edccc4f2b9b))
+* update readme ([#25](https://github.com/import-benjamin/.dotfiles/issues/25)) ([8ae1cb0](https://github.com/import-benjamin/.dotfiles/commit/8ae1cb04ea98b689d00f2c0f737a7e550cdae956))
+
 ## [1.5.0](https://github.com/import-benjamin/.dotfiles/compare/v1.4.0...v1.5.0) (2025-06-29)
 
 
