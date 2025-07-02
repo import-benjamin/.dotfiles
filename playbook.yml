@@ -12,11 +12,6 @@
         version: "v0.42.2"
         github_repo: "https://github.com/zellij-org/zellij"
         artifact_name: "zellij-x86_64-unknown-linux-musl.tar.gz"
-      - name: "nvim"
-        version: "v0.11.2"
-        github_repo: "https://github.com/neovim/neovim"
-        artifact_name: "nvim-linux-x86_64.tar.gz"
-        bin_path: "nvim/nvim-linux-x86_64/bin/nvim"
       - name: "helix"
         version: "25.01.1"
         github_repo: "https://github.com/helix-editor/helix"
@@ -74,7 +69,6 @@
     stow_configs:
       - "alacritty"
       - "fish"
-      - "nvim"
       - "zellij"
       - "helix"
   tasks:
