@@ -1,9 +1,12 @@
 ## Prerequisites
 
-To install `GNU Stow` and `ansible` on Debian/Ubuntu like systems, follow these steps:
+Install required packages:
 
 ```bash
+# Debian/Ubuntu systems
 sudo apt install stow ansible git
+# opensuse systems
+sudo zypper install stow git eza helix gitui
 ```
 
 ## Install with ansible-pull
@@ -42,7 +45,7 @@ This command will create a symlink for `$TOOL_DIRECTORY` in your home directory,
 To remove symlinks: Use the `-D` option. For example, to remove symlinks for Vim configurations:
 
 ```bash
-stow -D vim
+stow -D git
 ```
 
 Symlinks created with `ln` can be removed using `rm`.
