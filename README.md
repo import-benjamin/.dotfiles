@@ -15,8 +15,8 @@ sudo zypper install stow git eza helix gitui
 ```bash
 ansible-pull \
   --url https://github.com/import-benjamin/.dotfiles.git \
-  --checkout v2.0.0 \
-  --extra-vars "config_version=v2.0.0" \
+  --checkout v2.1.0 \
+  --extra-vars "config_version=v2.1.0" \
   --inventory localhost, \
   --connection local \
   --ask-become-pass \

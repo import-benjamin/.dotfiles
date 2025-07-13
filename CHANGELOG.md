@@ -1,5 +1,10 @@
 # Changelog
 
+## [2.1.0](https://github.com/import-benjamin/.dotfiles/compare/v2.0.0...v2.1.0) (2025-07-13)
+
+
+* **helix:** configure interface and lsp infos ([#27](https://github.com/import-benjamin/.dotfiles/issues/27)) ([0a0c8c9](https://github.com/import-benjamin/.dotfiles/commit/0a0c8c9ab63177e719723a2773284e7849b3e8d8))
+
 ## [2.0.0](https://github.com/import-benjamin/.dotfiles/compare/v1.5.0...v2.0.0) (2025-07-02)
 
 
