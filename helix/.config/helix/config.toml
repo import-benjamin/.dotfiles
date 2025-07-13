@@ -4,6 +4,13 @@ theme = "gruvbox"
 line-number = "relative"
 mouse = false
 completion-timeout = 5
+color-modes = true
+rulers = [120]
+bufferline = "always"
+end-of-line-diagnostics = "hint"
+
+[editor.inline-diagnostics]
+cursor-line = "warning"
 
 [editor.file-picker]
 hidden = false
