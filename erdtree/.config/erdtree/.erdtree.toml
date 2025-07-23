@@ -1,5 +1,6 @@
 icons = true
 human = true
+no-git = true
 
 # Do as `ls -l`
 # e.g. `erd --config ls`
@@ -11,4 +12,14 @@ suppress-size = true
 long = true
 sort = "name"
 dir-order = "last"
-layout = "iflat"
+layout = "inverted"
+
+[du]
+disk_usage = "block"
+icons = true
+layout = "flat"
+no-ignore = true
+no-git = true
+hidden = true
+level = 1
+
