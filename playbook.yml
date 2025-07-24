@@ -25,14 +25,10 @@
         version: "v1.23.0"
         github_repo: "https://github.com/starship/starship"
         artifact_name: "starship-x86_64-unknown-linux-gnu.tar.gz"
-      - name: "neovide"
-        version: "0.15.0"
-        github_repo: "https://github.com/neovide/neovide"
-        artifact_name: "neovide-linux-x86_64.tar.gz"
-      - name: "eza"
-        version: "v0.21.6"
-        github_repo: "https://github.com/eza-community/eza"
-        artifact_name: "eza_x86_64-unknown-linux-gnu.tar.gz"
+      - name: "erd"
+        version: "v3.1.2"
+        github_repo: "https://github.com/solidiquis/erdtree"
+        artifact_name: "erd-v3.1.2-x86_64-unknown-linux-gnu.tar.gz"
   tasks:
     - name: "Create bin folder"
       ansible.builtin.file:
@@ -71,6 +67,7 @@
       - "fish"
       - "zellij"
       - "helix"
+      - "erdtree"
   tasks:
   - name: "Clone repository to {{ ansible_env.HOME }}"
     ansible.builtin.git:
