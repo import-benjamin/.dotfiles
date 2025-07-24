@@ -1,5 +1,11 @@
 # Changelog
 
+## [2.1.0](https://github.com/import-benjamin/.dotfiles/compare/v2.0.0...v2.1.0) (2025-07-24)
+
+
+* **erdtree:** add config file and install binary ([#29](https://github.com/import-benjamin/.dotfiles/issues/29)) ([dbd2944](https://github.com/import-benjamin/.dotfiles/commit/dbd29440e56e552e528f9526e2810927a1eb4770))
+* **helix:** configure interface and lsp infos ([#27](https://github.com/import-benjamin/.dotfiles/issues/27)) ([0a0c8c9](https://github.com/import-benjamin/.dotfiles/commit/0a0c8c9ab63177e719723a2773284e7849b3e8d8))
+
 ## [2.0.0](https://github.com/import-benjamin/.dotfiles/compare/v1.5.0...v2.0.0) (2025-07-02)
 
 
