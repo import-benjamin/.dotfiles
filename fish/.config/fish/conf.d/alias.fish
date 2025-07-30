@@ -1,4 +1,5 @@
 alias glola="git log --oneline --graph --all"
-alias ll="eza -l"
-alias lt="eza -lT"
+alias ll="erd --config ls"
+alias lt="erd --config ls -T 3"
+alias du="erd --config du"
 alias hx="helix"
