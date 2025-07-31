@@ -1,5 +1,15 @@
 # Changelog
 
+## [2.1.0](https://github.com/import-benjamin/.dotfiles/compare/v2.0.0...v2.1.0) (2025-07-31)
+
+
+* **ansible:** include localhost in play scope ([#33](https://github.com/import-benjamin/.dotfiles/issues/33)) ([e6026fe](https://github.com/import-benjamin/.dotfiles/commit/e6026fe0058a7e93931a76e0cd608fc15e4ced7f))
+* **erdtree:** add alias for erd config ([#30](https://github.com/import-benjamin/.dotfiles/issues/30)) ([d5c982c](https://github.com/import-benjamin/.dotfiles/commit/d5c982cb6a4f1ff681eda84a44cb34b9e2c53368))
+* **erdtree:** add config file and install binary ([#29](https://github.com/import-benjamin/.dotfiles/issues/29)) ([dbd2944](https://github.com/import-benjamin/.dotfiles/commit/dbd29440e56e552e528f9526e2810927a1eb4770))
+* **git:** omit dotfiles version if not specified ([#32](https://github.com/import-benjamin/.dotfiles/issues/32)) ([a047674](https://github.com/import-benjamin/.dotfiles/commit/a0476744ae1576dfe128a484c8a7e32c41d02ea8))
+* **helix:** add opentofu language-server configuration ([#31](https://github.com/import-benjamin/.dotfiles/issues/31)) ([e2205b5](https://github.com/import-benjamin/.dotfiles/commit/e2205b568a1f534d5179843edb64d7a1655f0c18))
+* **helix:** configure interface and lsp infos ([#27](https://github.com/import-benjamin/.dotfiles/issues/27)) ([0a0c8c9](https://github.com/import-benjamin/.dotfiles/commit/0a0c8c9ab63177e719723a2773284e7849b3e8d8))
+
 ## [2.0.0](https://github.com/import-benjamin/.dotfiles/compare/v1.5.0...v2.0.0) (2025-07-02)
 
 
