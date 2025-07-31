@@ -58,7 +58,7 @@
         label: "{{ tools_folder ~ ( item.bin_path | default(item.name ~ '/' ~ item.name)) }} to /usr/local/bin/{{ item.name }}"
 
 - name: "Install dotfiles"
-  hosts: "all"
+  hosts: "all:localhost"
   tags:
     - "config"
   vars:
