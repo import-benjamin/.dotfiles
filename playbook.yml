@@ -1,7 +1,7 @@
 ---
 
 - name: "Install cli tools"
-  hosts: "all"
+  hosts: "all:localhost"
   tags:
     - "cli"
   vars:
@@ -73,7 +73,7 @@
     ansible.builtin.git:
       repo: "https://github.com/import-benjamin/.dotfiles.git"
       dest: "{{ ansible_env.HOME }}/.dotfiles"
-      version: "{{ config_version }}"
+      version: "{{ config_version | default(omit) }}"
 
   - name: "Fetch {{ ansible_env.HOME }}/.config directories"
     ansible.builtin.stat:
