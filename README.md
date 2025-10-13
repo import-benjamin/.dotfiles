@@ -1,3 +1,7 @@
+This repository contains a collection of dotfiles for my daily usage.
+Included tools are selected according to my requirements.
+Feel free to reuse these configurations..
+
 ## Prerequisites
 
 Install required packages:
@@ -11,10 +15,9 @@ sudo zypper install stow git eza helix gitui
 
 ## Install with ansible-pull
 
-<!-- x-release-please-start-version -->
 ```bash
 ansible-pull \
-  --url https://github.com/import-benjamin/.dotfiles.git \
+  --url https://codeberg.org/import-benjamin/.dotfiles.git \
   --checkout v2.0.0 \
   --extra-vars "config_version=v2.0.0" \
   --inventory localhost, \
@@ -22,13 +25,11 @@ ansible-pull \
   --ask-become-pass \
   playbook.yml
 ```
-<!-- x-release-please-end -->
 
 
 ## Install manually
 
 This section is intended for manually installing configuration files for unsupported architectures, such as arm64.
-
 We use stow to create symlinks in the home directory for specific configurations.
 If stow is unavailable on your system, you can create the symlink manually.
 
