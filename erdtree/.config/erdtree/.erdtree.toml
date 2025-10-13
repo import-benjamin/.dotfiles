@@ -7,7 +7,6 @@ no-git = true
 [ls]
 icons = true
 human = true
-level = 1
 suppress-size = true
 long = true
 sort = "name"
