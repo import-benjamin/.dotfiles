@@ -1,5 +1,7 @@
-
-theme = GruvboxDark
-background-opacity = 0.8
 background-blur = true
-
+background-opacity = 0.8
+font-feature = calt
+font-size = 16
+term = xterm-256color
+theme = light:zenbones_light,dark:zenbones_dark
+window-inherit-font-size = true
