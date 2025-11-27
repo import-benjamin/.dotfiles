@@ -1,17 +1,32 @@
 This repository contains a collection of dotfiles for my daily usage.
 Included tools are selected according to my requirements.
-Feel free to reuse these configurations..
+
+I'm using GitLab as my primary repository (https://gitlab.com/import-benjamin/dotfiles) to manage my dotfiles. I'm also using two additional mirrors on codeberg and github:
+- https://codeberg.org/import-benjamin/.dotfiles
+- https://github.com/import-benjamin/.dotfiles
+
 
 ## Prerequisites
 
-Install required packages:
+I'd recommend the use of `git` and `stow` if you're using an operating system based on Linux.
+In case you don't want to rely on these tools, you can still download an archive of this repository and declare symbolic links manually using `ln`.
 
 ```bash
 # Debian/Ubuntu systems
-sudo apt install stow ansible git
+sudo apt install stow git
 # opensuse systems
-sudo zypper install stow git eza helix gitui
+sudo zypper install stow git
 ```
+
+Parts of the tools I'm using are not packaged for all systems.
+You'll find a list of the installation instructions for most of theses tools below:
+
+- https://docs.helix-editor.com/install.html ![GitHub top language](https://img.shields.io/github/languages/top/helix-editor/helix)
+- https://zellij.dev/documentation/installation.html ![GitHub top language](https://img.shields.io/github/languages/top/zellij-org/zellij)
+- https://github.com/solidiquis/erdtree ![GitHub top language](https://img.shields.io/github/languages/top/solidiquis/erdtree)
+- https://ghostty.org/docs/install/binary ![GitHub top language](https://img.shields.io/github/languages/top/ghostty-org/ghostty)
+- https://starship.rs/installing/ ![GitHub top language](https://img.shields.io/github/languages/top/starship/starship)
+
 
 ## Install with ansible-pull
 
