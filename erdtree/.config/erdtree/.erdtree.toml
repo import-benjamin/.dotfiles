@@ -1,12 +1,10 @@
-icons = true
+icons = false
 human = true
 no-git = true
 
 # Do as `ls -l`
 # e.g. `erd --config ls`
 [ls]
-icons = true
-human = true
 suppress-size = true
 long = true
 sort = "name"
@@ -15,7 +13,6 @@ layout = "inverted"
 
 [du]
 disk_usage = "block"
-icons = true
 layout = "flat"
 no-ignore = true
 no-git = true
