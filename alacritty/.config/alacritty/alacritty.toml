@@ -9,12 +9,12 @@ decorations = "Full"
 startup_mode = "Maximized"
 
 [font]
-normal.family = "FantasqueSansM Nerd Font Mono"
-bold.family = "FantasqueSansM Nerd Font Mono"
-italic.family = "FantasqueSansM Nerd Font Mono"
-bold_italic.family = "FantasqueSansM Nerd Font Mono"
+normal.family = { family = "Jetbrains Mono", style = "Regular" }
+bold.family = { family = "Jetbrains Mono", style = "Bold" }
+italic.family = { family = "Jetbrains Mono", style = "Italic" }
+bold_italic.family = { family = "Jetbrains Mono", style = "Bold Italic" }
 
-size = 16.0
+size = 13.0
 
 [mouse]
 hide_when_typing = false
